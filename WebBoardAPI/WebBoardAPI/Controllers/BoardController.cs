@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebBoardAPI.Entities;
 using WebBoardAPI.Models;
 using WebBoardAPI.Services;
 
@@ -39,10 +40,22 @@ namespace WebBoardAPI.Controllers
             boardService.SetArticle(request);
         }
 
-        //[HttpGet("index")]
-        //[HttpGet("article")]
-        //[HttpPost("upload")]
-        //[HttpPatch("update")]
-        //[HttpDelete("delete")]
+        [HttpDelete("article/delete/{id}")]
+        public void DeleteArticle(long id)
+        {
+            boardService.DeleteArticle(id);
+        }
+
+        [HttpPatch("article/update/{id}")]
+        public void UpdateArticle(long id, [FromBody] ArticleUpdateRequest request)
+        {
+            boardService.UpdateArticle(id, request);
+        }
+
+        [HttpPost("comment/{articleId}")]
+        public void SetComment(long articleId, CommentRequest request)
+        {
+            boardService.SetComment(articleId, request);
+        }
     }
 }
