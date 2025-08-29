@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebBoardAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac201ef5f9872adaa3f1823019d146140360515c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1a60869c4d4faf9bf0fb40c90919132a8126790")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebBoardAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebBoardAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

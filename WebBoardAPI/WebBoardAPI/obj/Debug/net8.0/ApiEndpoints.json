@@ -21,8 +21,54 @@
   },
   {
     "ContainingType": "WebBoardAPI.Controllers.BoardController",
+    "Method": "GetArticle",
+    "RelativePath": "api/Board/article/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WebBoardAPI.Models.ArticleItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebBoardAPI.Controllers.BoardController",
+    "Method": "GetArticles",
+    "RelativePath": "api/Board/article/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WebBoardAPI.Models.ArticleListItem, WebBoardAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebBoardAPI.Controllers.BoardController",
     "Method": "Test",
-    "RelativePath": "api/Board/test",
+    "RelativePath": "api/Board/article/upload",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

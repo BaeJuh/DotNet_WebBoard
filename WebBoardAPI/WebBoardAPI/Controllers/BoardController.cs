@@ -21,10 +21,22 @@ namespace WebBoardAPI.Controllers
             return boardService.index();
         }
 
-        [HttpPost("test")]
+        [HttpGet("article/all")]
+        public List<ArticleListItem> GetArticles()
+        {
+            return boardService.GetArticles();
+        }
+
+        [HttpGet("article/{id}")]
+        public ArticleItem GetArticle(long id)
+        {
+            return boardService.GetArticleItem(id);
+        }
+
+        [HttpPost("article/upload")]
         public void Test([FromBody] ArticleUploadRequest request)
         {
-            boardService.SetArticleTest(request);
+            boardService.SetArticle(request);
         }
 
         //[HttpGet("index")]
